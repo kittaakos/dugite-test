@@ -1,0 +1,14 @@
+{
+  "name": "dugite-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dugite": "^1.67.0",
+    "electron": "^2.0.2",
+    "webpack": "^4.12.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.0.4"
+  }
+}
