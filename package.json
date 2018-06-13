@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "webpack-cli": "^3.0.4"
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "start": "electron ./main.js"
   }
 }
