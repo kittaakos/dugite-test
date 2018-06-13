@@ -1,15 +1,16 @@
 import { GitProcess, GitError, IGitResult } from 'dugite'
+const path = require('path');
 
 async function getStatus(path) {
 
   const result = await GitProcess.exec([ 'status' ], path)
   if (result.exitCode === 0) {
     const output = result.stdout
-    document.getElementById('git-appraisal').innerText = output
+    document.getElementById('output').innerText = output
   } else {
     const error = result.stderr
-    document.getElementById('git-appraisal').innerText = error
+    document.getElementById('output').innerText = error
   }
 }
 
-console.log(getStatus('~/dugite-test'))
+getStatus(path.resolve('../../dugite-test'))
